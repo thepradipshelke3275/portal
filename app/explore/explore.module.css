@@ -1,0 +1,358 @@
+.container {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+/* Full-Width Hero Section */
+.heroFullWidth {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0052cc 0%, #003d99 100%);
+  color: white;
+  padding: 80px 20px;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.heroInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.heroTag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  width: fit-content;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.heroMainTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.heroAccent {
+  background: linear-gradient(135deg, #ff6b35 0%, #ffa500 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.heroDesc {
+  font-size: 1.15rem;
+  opacity: 0.95;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.primaryBtn {
+  padding: 14px 32px;
+  background: white;
+  color: #0052cc;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primaryBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.secondaryBtn {
+  padding: 14px 32px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.secondaryBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+}
+
+.heroImage {
+  position: relative;
+  height: 350px;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  backdrop-filter: blur(10px);
+}
+
+/* Solutions Section */
+.solutionsSection {
+  padding: 80px 20px;
+  background: #f8fafb;
+}
+
+.sectionContentWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionIntro {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sectionMainTitle {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #0a0e27;
+  margin: 0 0 12px 0;
+}
+
+.sectionDesc {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.solutionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.solutionCard {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.solutionCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 52, 204, 0.12);
+  border-color: #0052cc;
+}
+
+.solutionIcon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.solutionTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0a0e27;
+  margin: 0 0 12px 0;
+}
+
+.solutionDesc {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin: 0 0 20px 0;
+  line-height: 1.5;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.featuresList li {
+  font-size: 0.9rem;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+/* Stats Section */
+.statsFullWidth {
+  padding: 80px 20px;
+  background: white;
+}
+
+.statsTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0a0e27;
+  text-align: center;
+  margin: 0 0 48px 0;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+}
+
+.statCard {
+  text-align: center;
+  padding: 24px;
+  background: #f8fafb;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.statCard:hover {
+  border-color: #0052cc;
+  transform: translateY(-4px);
+}
+
+.statValue {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.statLabel {
+  font-size: 0.95rem;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+/* CTA Section */
+.ctaSection {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1e3a5f 0%, #2d5a8c 100%);
+  text-align: center;
+  color: white;
+}
+
+.ctaTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 16px 0;
+}
+
+.ctaDesc {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  margin: 0 0 32px 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaButton {
+  padding: 16px 40px;
+  background: white;
+  color: #0052cc;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .heroFullWidth {
+    padding: 50px 20px;
+    min-height: auto;
+  }
+
+  .heroInner {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .heroMainTitle {
+    font-size: 2rem;
+  }
+
+  .heroImage {
+    height: 250px;
+  }
+
+  .imagePlaceholder {
+    font-size: 3rem;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    width: 100%;
+  }
+
+  .sectionMainTitle {
+    font-size: 2rem;
+  }
+
+  .solutionsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ctaTitle {
+    font-size: 1.75rem;
+  }
+
+  .ctaDesc {
+    font-size: 1rem;
+  }
+}

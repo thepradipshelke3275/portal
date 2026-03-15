@@ -1,0 +1,171 @@
+.section {
+  padding: 80px 20px;
+  background: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0a0e27;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.viewAll {
+  color: #0052cc;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+  padding-top: 4px;
+  transition: color 0.3s ease;
+}
+
+.viewAll:hover {
+  color: #0041a3;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 28px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  border-color: #0052cc;
+  box-shadow: 0 12px 32px rgba(0, 82, 204, 0.1);
+  transform: translateY(-4px);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #0a0e27;
+  font-size: 18px;
+}
+
+.status {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.statusgreen {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.statusblue {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.statusorange {
+  background-color: #fed7aa;
+  color: #92400e;
+}
+
+.companyName {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0a0e27;
+  margin-bottom: 8px;
+}
+
+.companyDetails {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.avatarGroup {
+  display: flex;
+  gap: -8px;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: -8px;
+}
+
+.avatar:first-child {
+  margin-right: -8px;
+}
+
+.exploreLink {
+  color: #07a2e4;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  padding-top: 12px;
+}
+
+.exploreLink:hover {
+  color: #07a2e4;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cardsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}
