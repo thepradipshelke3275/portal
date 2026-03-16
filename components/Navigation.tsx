@@ -31,6 +31,14 @@ export default function Navigation() {
           >
             Design 2
           </Link>
+           <Link
+            href="/orange"
+            className={`${styles.navLink} ${
+              isActive('/orange') ? styles.active : ''
+            }`}
+          >
+            Design 3
+          </Link>
           {/* <Link
             href="/dashboard"
             className={`${styles.navLink} ${
