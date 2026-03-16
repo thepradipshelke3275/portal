@@ -164,7 +164,7 @@ export default function DirectoryPage() {
                 </div>
               </div>
 
-              <button className={styles.viewBtn}>View Org Chart</button>
+              <button className={styles.viewBtn}>View Account Map</button>
             </div>
           </div>
         ))}

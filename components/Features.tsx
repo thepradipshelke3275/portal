@@ -49,7 +49,7 @@ export default function Features() {
                 </div>
                 <div className={styles.mockupContent}>
                   <div className={styles.orgChart}>
-                    <div className={styles.node}>Org Chart</div>
+                    <div className={styles.node}>Account Map</div>
                   </div>
                   <div className={styles.details}>
                     <div className={styles.detailLine}></div>

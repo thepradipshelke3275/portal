@@ -72,7 +72,7 @@ export default function RecentlyUpdated() {
               <div className={styles.cardFooter}>
                 <button className={styles.viewButton}>
                   <i className="pi pi-arrow-right"></i>
-                  View Org Chart
+                  View Account Map
                 </button>
               </div>
             </Card>

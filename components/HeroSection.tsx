@@ -7,7 +7,7 @@ export default function HeroSection() {
       <div className={styles.container}>
         <div className={styles.content}>
           <h1 className={styles.title}>
-            The Intelligence Behind the <span className={styles.highlight}>Org Chart</span>
+            The Intelligence Behind the <span className={styles.highlight}>Account Map</span>
           </h1>
           <p className={styles.subtitle}>
             Navigate large enterprises with verified account maps, decision-maker hierarchies, and real-time sales triggers.

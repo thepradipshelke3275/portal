@@ -66,7 +66,7 @@ export default function FeaturesSection() {
             <p className={styles.ctaSubtitle}>READY TO GET STARTED?</p>
             <h3 className={styles.ctaTitle}>Unlock Full View</h3>
             <p className={styles.ctaDescription}>
-              Access the world's most comprehensive org chart directory and find decision-makers in minutes.
+              Access the world's most comprehensive  directory and find decision-makers in minutes.
             </p>
             <Button className={styles.ctaButton}>Create Your First Map</Button>
           </div>

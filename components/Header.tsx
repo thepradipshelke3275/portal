@@ -25,7 +25,7 @@ export default function Header() {
             <div className={styles.titleBlock}>
               <h1 className={styles.title}>
                 <span>Stop Guessing the Hierarchy.</span>
-                <span className={styles.highlight}>See the Org Chart.</span>
+                <span className={styles.highlight}>See the Account Map.</span>
               </h1>
             </div>
           </div>
