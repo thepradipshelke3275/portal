@@ -34,7 +34,7 @@ export default function Hero() {
             <span className={styles.searchIcon}>
               <i className="pi pi-search"></i>
             </span>
-            <InputText
+            <input
               value={searchValue}
               onChange={(e) => setSearchValue(e.target.value)}
               placeholder="Search 20 Million Org Charts (e.g. Google)..."
