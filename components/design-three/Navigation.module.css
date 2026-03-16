@@ -1,0 +1,132 @@
+.nav {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.navLink {
+  color: #1f3a52 !important;
+  font-weight: 600 !important;
+  font-size: 0.875rem !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navLink :global(.p-button-label) {
+  color: #1f3a52 !important;
+}
+
+.navLink :global(.p-button:hover) {
+  background-color: transparent !important;
+  color: #f26522 !important;
+}
+
+.navLink :global(.p-button:hover .p-button-label) {
+  color: #f26522 !important;
+}
+
+.loginButton {
+  color: #1f3a52 !important;
+  font-weight: 600 !important;
+  font-size: 0.875rem !important;
+}
+
+.loginButton :global(.p-button:hover) {
+  background-color: transparent !important;
+  color: #f26522 !important;
+}
+
+.loginButton :global(.p-button:hover .p-button-label) {
+  color: #f26522 !important;
+}
+
+.navContainer {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 2.5rem;
+  object-fit: contain;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1f3a52;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+}
+
+.link {
+  color: #1f3a52;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #f26522;
+}
+
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.loginLink {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1f3a52;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.loginLink:hover {
+  color: #f26522;
+}
+
+.ctaButton :global(.p-button) {
+  background-color: #f26522 !important;
+  color: white !important;
+  border: none !important;
+  padding: 0.625rem 1.5rem !important;
+  border-radius: 0.5rem !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  box-shadow: 0 10px 15px -3px rgba(242, 101, 34, 0.2) !important;
+  transition: background-color 0.2s, transform 0.2s !important;
+}
+
+.ctaButton :global(.p-button:hover) {
+  background-color: #d9531e !important;
+  transform: translateY(-2px) !important;
+}

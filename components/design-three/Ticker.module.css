@@ -1,0 +1,40 @@
+.ticker {
+  background-color: #1f3a52;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 50;
+}
+
+.tickerContent {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  white-space: nowrap;
+  gap: 3rem;
+}
+
+.tickerItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  color: #f26522;
+}
+
+.highlight {
+  color: #bfdbfe;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

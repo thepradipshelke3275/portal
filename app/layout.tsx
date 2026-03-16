@@ -4,6 +4,8 @@ import { Analytics } from '@vercel/analytics/next'
 import Navigation from '@/components/Navigation'
 import 'primeicons/primeicons.css'
 import './globals.css'
+import 'primereact/resources/themes/lara-light-blue/theme.css'; // or any other theme
+import 'primereact/resources/primereact.min.css';
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
@@ -39,9 +41,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="font-sans antialiased">
-        <Navigation />
+        {/* <Navigation /> */}
         {children}
-        <Analytics />
+        {/* <Analytics /> */}
       </body>
     </html>
   )
