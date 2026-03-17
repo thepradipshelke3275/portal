@@ -16,7 +16,7 @@ export default function Navigation() {
           <div className={styles.navLinks}>
             <Link href="/">
               <Button
-                label="Home"
+                label="Design 1"
                 icon="pi pi-home"
                 className={styles.navLink}
                 text
@@ -30,12 +30,14 @@ export default function Navigation() {
                 text
               />
             </Link>
+            <Link href="/orange">
             <Button
-              label="Pricing"
+              label="Design 3"
               icon="pi pi-dollar"
               className={styles.navLink}
               text
             />
+            </Link>
           </div>
           <div className={styles.navActions}>
             <Button

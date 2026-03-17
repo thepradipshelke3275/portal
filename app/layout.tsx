@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
-import Navigation from '@/components/Navigation'
+import Navigation from '@/components/design-three/Navigation'
 import 'primeicons/primeicons.css'
 import './globals.css'
 import 'primereact/resources/themes/lara-light-blue/theme.css'; // or any other theme
 import 'primereact/resources/primereact.min.css';
+import Footer from '@/components/design-three/Footer'
+import Ticker from '@/components/design-three/Ticker'
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
@@ -42,8 +43,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className="font-sans antialiased">
         {/* <Navigation /> */}
+        <Ticker />
+      <Navigation />
         {children}
         {/* <Analytics /> */}
+        <Footer/>
       </body>
     </html>
   )

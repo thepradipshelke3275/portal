@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { Button } from 'primereact/button';
-import { InputText } from 'primereact/inputtext';
 import styles from './Hero.module.css';
 
 export default function Hero() {

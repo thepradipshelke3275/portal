@@ -6,7 +6,7 @@ import RecentlyUpdated from '@/components/RecentlyUpdated'
 export default function DesignPage() {
   return (
     <div>
-      <Navigation/>
+      {/* <Navigation/> */}
       <Header />
       <Features />
       <RecentlyUpdated />

@@ -10,12 +10,12 @@ import Footer from './Footer';
 export default function PageWrapper() {
   return (
     <>
-      <Ticker />
-      <Navigation />
+      {/* <Ticker />
+      <Navigation /> */}
       <Hero />
       <Platform />
       <RecentCharts />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
